@@ -38,6 +38,10 @@ return require('packer').startup(function(use)
   use('L3MON4D3/LuaSnip')
   use('hrsh7th/nvim-cmp')
   use {
+      "windwp/nvim-autopairs",
+      config = function() require("nvim-autopairs").setup {} end
+  }
+  use {
       'numToStr/Comment.nvim',
       config = function()
           require('Comment').setup()
@@ -61,4 +65,6 @@ return require('packer').startup(function(use)
 		  {'L3MON4D3/LuaSnip'},
 	  }
   }
+  use('lewis6991/gitsigns.nvim')
+  use('f-person/git-blame.nvim')
 end)
