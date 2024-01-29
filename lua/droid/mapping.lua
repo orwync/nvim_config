@@ -15,6 +15,7 @@ vim.keymap.set("n", "gg", "gg0")
 vim.keymap.set("n", "G", "G0")
 
 
+
 vim.keymap.set("n", "<leader>vwm", function()
     require("vim-with-me").StartVimWithMe()
 end)
@@ -48,6 +49,9 @@ vim.keymap.set("n", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = true })
 
 vim.keymap.set("n", "<leader>vpp", "<cmd>e ~/.dotfiles/nvim/.config/nvim/lua/theprimeagen/packer.lua<CR>");
 vim.keymap.set("n", "<leader>mr", "<cmd>CellularAutomaton make_it_rain<CR>");
+
+--remap save file
+vim.keymap.set("n", "<leader>w", ":w<CR>");
 
 vim.keymap.set("n", "<leader><leader>", function()
     vim.cmd("so")

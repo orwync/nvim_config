@@ -26,6 +26,8 @@ return require('packer').startup(function(use)
 	  end
   })
 
+  use ('leoluz/nvim-dap-go')
+  use ('mfussenegger/nvim-dap')
   use('nvim-treesitter/nvim-treesitter', {run= ':TSUpdate'})
   use('ThePrimeagen/harpoon')
   use('mbbill/undotree')
@@ -67,4 +69,8 @@ return require('packer').startup(function(use)
   }
   use('lewis6991/gitsigns.nvim')
   use('f-person/git-blame.nvim')
+
+  -- comment top
+  use('nvim-treesitter/nvim-treesitter-context')
+  use('ThePrimeagen/vim-be-good')
 end)
