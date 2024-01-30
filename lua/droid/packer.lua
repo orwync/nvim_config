@@ -73,4 +73,5 @@ return require('packer').startup(function(use)
   -- comment top
   use('nvim-treesitter/nvim-treesitter-context')
   use('ThePrimeagen/vim-be-good')
+  use('eandrju/cellular-automaton.nvim')
 end)
