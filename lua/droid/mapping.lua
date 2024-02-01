@@ -52,6 +52,8 @@ vim.keymap.set("n", "<leader>mr", "<cmd>CellularAutomaton make_it_rain<CR>");
 
 --remap save file
 vim.keymap.set("n", "<leader>w", ":w<CR>");
+vim.keymap.set("n", "<leader>q", ":q<CR>");
+vim.keymap.set("n", "<leader>wq", ":wq<CR>");
 
 vim.keymap.set("n", "<leader><leader>", function()
     vim.cmd("so")
