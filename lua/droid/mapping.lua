@@ -14,18 +14,6 @@ vim.keymap.set("n", "N", "Nzzzv")
 vim.keymap.set("n", "gg", "gg0")
 vim.keymap.set("n", "G", "G0zz")
 
-
-
--- vim.keymap.set("n", "<leader>vwm", function()
---     require("vim-with-me").StartVimWithMe()
--- end)
--- vim.keymap.set("n", "<leader>svwm", function()
---     require("vim-with-me").StopVimWithMe()
--- end)
-
--- greatest remap ever
---vim.keymap.set(keymap"x", "<leader>p", [["_dP]])
-
 -- next greatest remap ever : asbjornHaland
 vim.keymap.set({"n", "v"}, "<leader>y", [["+y]])
 vim.keymap.set("n", "<leader>Y", [["+Y]])
