@@ -49,3 +49,10 @@ vim.keymap.set("n", "<leader><leader>", function()
     vim.cmd("so")
 end)
 
+--golang remapping
+vim.keymap.set(
+"n",
+"<leader>ee",
+"oif err != nil {<CR>}<Esc>Oreturn err<Esc>"
+)
+

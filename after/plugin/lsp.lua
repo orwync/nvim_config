@@ -19,7 +19,7 @@ end)
 
 require('mason').setup({})
 require('mason-lspconfig').setup({
-  ensure_installed = {'gopls', 'rust_analyzer'},
+  ensure_installed = {'gopls', 'rust_analyzer','eslint'},
   handlers = {
     lsp_zero.default_setup,
     lua_ls = function()
