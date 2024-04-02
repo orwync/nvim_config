@@ -85,6 +85,11 @@ _G.packer_plugins = {
     path = "/home/droid/.local/share/nvim/site/pack/packer/start/LuaSnip",
     url = "https://github.com/L3MON4D3/LuaSnip"
   },
+  ["cellular-automaton.nvim"] = {
+    loaded = true,
+    path = "/home/droid/.local/share/nvim/site/pack/packer/start/cellular-automaton.nvim",
+    url = "https://github.com/eandrju/cellular-automaton.nvim"
+  },
   ["cmp-buffer"] = {
     loaded = true,
     path = "/home/droid/.local/share/nvim/site/pack/packer/start/cmp-buffer",
@@ -109,6 +114,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/droid/.local/share/nvim/site/pack/packer/start/cmp_luasnip",
     url = "https://github.com/saadparwaiz1/cmp_luasnip"
+  },
+  ["coc-cucumber"] = {
+    loaded = true,
+    path = "/home/droid/.local/share/nvim/site/pack/packer/start/coc-cucumber",
+    url = "https://github.com/yaegassy/coc-cucumber"
   },
   ["git-blame.nvim"] = {
     loaded = true,
@@ -139,6 +149,17 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/droid/.local/share/nvim/site/pack/packer/start/mason.nvim",
     url = "https://github.com/williamboman/mason.nvim"
+  },
+  ["neovim-project"] = {
+    config = { "\27LJ\2\nœ\1\0\0\4\0\v\0\0166\0\0\0009\0\1\0009\0\2\0\18\2\0\0009\0\3\0'\3\4\0B\0\3\0016\0\5\0'\2\6\0B\0\2\0029\0\a\0005\2\t\0005\3\b\0=\3\n\2B\0\2\1K\0\1\0\rprojects\1\0\0\1\2\0\0\6*\nsetup\19neovim-project\frequire\fglobals\vappend\19sessionoptions\bopt\bvim\0" },
+    loaded = true,
+    path = "/home/droid/.local/share/nvim/site/pack/packer/start/neovim-project",
+    url = "https://github.com/coffebar/neovim-project"
+  },
+  ["neovim-session-manager"] = {
+    loaded = true,
+    path = "/home/droid/.local/share/nvim/site/pack/packer/start/neovim-session-manager",
+    url = "https://github.com/Shatur/neovim-session-manager"
   },
   ["nvim-autopairs"] = {
     config = { "\27LJ\2\n@\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\19nvim-autopairs\frequire\0" },
@@ -207,6 +228,11 @@ _G.packer_plugins = {
     path = "/home/droid/.local/share/nvim/site/pack/packer/start/vim-be-good",
     url = "https://github.com/ThePrimeagen/vim-be-good"
   },
+  ["vim-cucumber"] = {
+    loaded = true,
+    path = "/home/droid/.local/share/nvim/site/pack/packer/start/vim-cucumber",
+    url = "https://github.com/tpope/vim-cucumber"
+  },
   ["vim-fugitive"] = {
     loaded = true,
     path = "/home/droid/.local/share/nvim/site/pack/packer/start/vim-fugitive",
@@ -215,6 +241,14 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
+-- Config for: neovim-project
+time([[Config for neovim-project]], true)
+try_loadstring("\27LJ\2\nœ\1\0\0\4\0\v\0\0166\0\0\0009\0\1\0009\0\2\0\18\2\0\0009\0\3\0'\3\4\0B\0\3\0016\0\5\0'\2\6\0B\0\2\0029\0\a\0005\2\t\0005\3\b\0=\3\n\2B\0\2\1K\0\1\0\rprojects\1\0\0\1\2\0\0\6*\nsetup\19neovim-project\frequire\fglobals\vappend\19sessionoptions\bopt\bvim\0", "config", "neovim-project")
+time([[Config for neovim-project]], false)
+-- Config for: Comment.nvim
+time([[Config for Comment.nvim]], true)
+try_loadstring("\27LJ\2\n5\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\fComment\frequire\0", "config", "Comment.nvim")
+time([[Config for Comment.nvim]], false)
 -- Config for: rose-pine
 time([[Config for rose-pine]], true)
 try_loadstring("\27LJ\2\n9\0\0\3\0\3\0\0056\0\0\0009\0\1\0'\2\2\0B\0\2\1K\0\1\0\26colorscheme rose-pine\bcmd\bvim\0", "config", "rose-pine")
@@ -223,10 +257,6 @@ time([[Config for rose-pine]], false)
 time([[Config for nvim-autopairs]], true)
 try_loadstring("\27LJ\2\n@\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\19nvim-autopairs\frequire\0", "config", "nvim-autopairs")
 time([[Config for nvim-autopairs]], false)
--- Config for: Comment.nvim
-time([[Config for Comment.nvim]], true)
-try_loadstring("\27LJ\2\n5\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\fComment\frequire\0", "config", "Comment.nvim")
-time([[Config for Comment.nvim]], false)
 
 _G._packer.inside_compile = false
 if _G._packer.needs_bufread == true then

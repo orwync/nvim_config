@@ -74,4 +74,25 @@ return require('packer').startup(function(use)
   use('nvim-treesitter/nvim-treesitter-context')
   use('ThePrimeagen/vim-be-good')
   use('eandrju/cellular-automaton.nvim')
+  use('yaegassy/coc-cucumber')
+  use('tpope/vim-cucumber')
+
+  use({
+  "coffebar/neovim-project",
+  config = function()
+    -- enable saving the state of plugins in the session
+    vim.opt.sessionoptions:append("globals") -- save global variables that start with an uppercase letter and contain at least one lowercase letter.
+    -- setup neovim-project plugin
+    require("neovim-project").setup {
+      projects = { -- define project roots
+        "*",
+      },
+    }
+  end,
+  requires = {
+    { "nvim-lua/plenary.nvim" },
+    { "nvim-telescope/telescope.nvim", tag = "0.1.4" },
+    { "Shatur/neovim-session-manager" },
+  }
+})
 end)

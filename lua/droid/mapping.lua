@@ -56,3 +56,25 @@ vim.keymap.set(
 "oif err != nil {<CR>}<Esc>Oreturn err<Esc>"
 )
 
+--cucumber go to def golang
+vim.keymap.set(
+"n",
+"<leader>te",
+"oif err != nil {<CR>}<Esc>Oreturn err<Esc>"
+)
+
+
+local function run_git_status()
+    print("hello")
+end
+
+-- Call the function to run git status
+-- vim.keymap.set(
+-- "n",
+-- "<leader>te",
+-- run_git_status(),
+-- )
+--
+--
+vim.keymap.set('n', '<C-l>', '<cmd>Git log<cr>') 
+
