@@ -78,3 +78,5 @@ end
 --
 vim.keymap.set('n', '<C-l>', '<cmd>Git log<cr>') 
 
+vim.keymap.set("n", "<leader>ww", "<C-w>w");
+vim.keymap.set("n", "<leader>wo", "<C-w>o");
