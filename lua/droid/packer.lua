@@ -74,8 +74,6 @@ return require('packer').startup(function(use)
   use('nvim-treesitter/nvim-treesitter-context')
   use('ThePrimeagen/vim-be-good')
   use('eandrju/cellular-automaton.nvim')
-  use('yaegassy/coc-cucumber')
-  use('tpope/vim-cucumber')
 
   use({
   "coffebar/neovim-project",
@@ -85,7 +83,8 @@ return require('packer').startup(function(use)
     -- setup neovim-project plugin
     require("neovim-project").setup {
       projects = { -- define project roots
-        "*",
+        "~/.config/*",
+        "~/project/*",
       },
     }
   end,
