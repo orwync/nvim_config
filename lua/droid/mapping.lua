@@ -15,14 +15,14 @@ vim.keymap.set("n", "gg", "gg0")
 vim.keymap.set("n", "G", "G0zz")
 
 -- next greatest remap ever : asbjornHaland
-vim.keymap.set({"n", "v"}, "<leader>y", [["+y]])
+vim.keymap.set({ "n", "v" }, "<leader>y", [["+y]])
 vim.keymap.set("n", "<leader>Y", [["+Y]])
-vim.keymap.set({"n", "v"}, "<leader>p", [["+p]])
-vim.keymap.set({"n", "v"}, "<leader>p", [["+p]])
+vim.keymap.set({ "n", "v" }, "<leader>p", [["+p]])
+vim.keymap.set({ "n", "v" }, "<leader>p", [["+p]])
 vim.keymap.set("n", "<leader>P", [["+P]])
 vim.keymap.set("n", "<leader>P", [["+P]])
 
-vim.keymap.set({"n", "v"}, "<leader>d", [["_d]])
+vim.keymap.set({ "n", "v" }, "<leader>d", [["_d]])
 
 -- This is going to get me cancelled
 vim.keymap.set("i", "<C-c>", "<Esc>")
@@ -58,32 +58,10 @@ end)
 
 --golang remapping
 vim.keymap.set(
-"n",
-"<leader>ee",
-"oif err != nil {<CR>}<Esc>Oreturn err<Esc>"
+    "n",
+    "<leader>ee",
+    "oif err != nil {<CR>}<Esc>Oreturn err<Esc>"
 )
-
---cucumber go to def golang
-vim.keymap.set(
-"n",
-"<leader>te",
-"oif err != nil {<CR>}<Esc>Oreturn err<Esc>"
-)
-
-
-local function run_git_status()
-    print("hello")
-end
-
--- Call the function to run git status
--- vim.keymap.set(
--- "n",
--- "<leader>te",
--- run_git_status(),
--- )
---
---
-
 vim.keymap.set("n", "<leader>t", "<C-t>");
 vim.keymap.set("n", "<leader>o", function()
     require("treesitter-context").go_to_context(vim.v.count1)
