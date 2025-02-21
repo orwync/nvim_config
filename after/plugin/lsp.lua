@@ -1,4 +1,7 @@
 local lsp_zero = require('lsp-zero')
+local capabilites = vim.lsp.protocol.make_client_capabilities()
+capabilites.workspace.didChangeConfiguration = true
+capabilites.workspace.configuration = true
 
 lsp_zero.on_attach(function(client, bufnr)
     local opts = { buffer = bufnr, remap = false }

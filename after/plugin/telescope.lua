@@ -11,7 +11,7 @@ vim.keymap.set('n', '<leader>fr', builtin.registers, { desc = "search in registe
 -- end)
 
 vim.keymap.set('n', '<leader>fl', function()
-    builtin.live_grep();
+    builtin.live_grep({ hidden = true });
 end)
 -- change project
 vim.keymap.set('n', '<leader>cp', function()
